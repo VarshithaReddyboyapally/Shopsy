@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Customer Login</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  form {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 320px;
+  }
+  table {
+    width: 100%;
+  }
+  td {
+    padding: 8px 0;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="submit"] {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  .register-text {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .register-text a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  .register-text a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+<form action="cus" method="post">
+  <table>
+    <tr>
+      <td><label for="uname">UserName:</label></td>
+      <td><input type="text" id="uname" name="uname" required></td>
+    </tr>
+    <tr>
+      <td><label for="psw">Password:</label></td>
+      <td><input type="password" id="psw" name="psw" required></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="submit" value="Customer Login">
+      </td>
+    </tr>
+  </table>
+  <div class="register-text">
+    Don't have any account? <a href="CustomerRegister.html">Register here</a>
+  </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Shopsy</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* soft blue gradient */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      width: 350px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      color: #444;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      border: none;
+      color: white;
+      font-size: 16px;
+      margin-top: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="register" method="post">
+    <h2>Register</h2>
+
+    <label for="uname">Username:</label>
+    <input type="text" name="uname" id="uname" required>
+
+    <label for="psw">Password:</label>
+    <input type="password" name="psw" id="psw" required>
+
+    <label for="fname">First Name:</label>
+    <input type="text" name="fname" id="fname">
+
+    <label for="lname">Last Name:</label>
+    <input type="text" name="lname" id="lname">
+
+    <label for="mail">Email:</label>
+    <input type="email" name="mail" id="mail">
+
+    <label for="city">City:</label>
+    <input type="text" name="city" id="city">
+
+    <label for="phno">Phone:</label>
+    <input type="text" name="phno" id="phno">
+
+    <input type="submit" value="Register">
+  </form>
+
+</body>
+</html>
